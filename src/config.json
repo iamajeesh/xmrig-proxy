@@ -4,25 +4,32 @@
     "access-log-file": null,
     "retries": 5,
     "retry-pause": 5,
-    "donate-level": 2,
+    "donate-level": 1,
     "coin": "xmr",
     "custom-diff": 0,
     "syslog": false,
-    "verbose": false,
+    "verbose": true,
     "colors": true,
     "workers": true,
     "pools": [
         {
-            "url": "pool.minemonero.pro:5555",
-            "user": "",
-            "pass": "x"
+            "url": "etn-us-east1.nanopool.org:13333",
+            "user": "etnjvrNacPzCavwZNRnkMAPTcrXMWxiuPTTNVKsjMGAyD2weNxZuRiU26m7CsPNBCX35ffiAWPAQsZuKYx25VhDd1PtTUQSX51.g1",
+            "pass": "g1"
+        },
+        {
+            "url": "etn-us-west1.nanopool.org:13333",
+            "user": "etnjvrNacPzCavwZNRnkMAPTcrXMWxiuPTTNVKsjMGAyD2weNxZuRiU26m7CsPNBCX35ffiAWPAQsZuKYx25VhDd1PtTUQSX51.g2",
+            "pass": "g2"
         }
+
+
     ],
     "bind": [
-        "0.0.0.0:3333"
+        "0.0.0.0:3232"
     ],
     "api": {
-        "port": 0,
+        "port": 2323,
         "access-token": null,
         "worker-id": null
     }
