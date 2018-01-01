@@ -71,8 +71,8 @@ public:
     inline void setMapperId(ssize_t mapperId)         { m_mapperId = mapperId; }
 
 private:
-    constexpr static size_t kLoginTimeout  = 10 * 1000;
-    constexpr static size_t kSocketTimeout = 60 * 10 * 1000;
+    constexpr static size_t kLoginTimeout  = 20 * 1000;
+    constexpr static size_t kSocketTimeout = 120 * 10 * 1000;
 
     bool parseRequest(int64_t id, const char *method, const rapidjson::Value &params);
     void heartbeat();
