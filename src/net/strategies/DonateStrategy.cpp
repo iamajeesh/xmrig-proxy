@@ -73,7 +73,7 @@ bool DonateStrategy::reschedule()
         return false;
     }
 
-    m_target = m_ticks + (6000 * ((double) m_donateTicks / level));
+    m_target = m_ticks + (12000 * ((double) m_donateTicks / level));
     m_active = false;
 
     stop();
